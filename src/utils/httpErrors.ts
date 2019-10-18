@@ -31,6 +31,14 @@ export class HTTP404Error extends HTTPClientError {
     }
 }
 
+export class HTTP401Error extends HTTPClientError {
+    readonly statusCode = 401;
+
+    constructor(message: string | object = "Unauthorized User") {
+        super(message);
+    }
+}
+
 export class HTTP500Error extends HTTPClientError {
     readonly statusCode = 500;
     constructor(message: string | object = "Internal Server Error") {

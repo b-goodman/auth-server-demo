@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { checkSearchParams } from "../../middleware/checks";
-import { searchVideos } from "./handlers";
+import { validateToken } from "../../middleware/auth";
 
 export default [
     {
@@ -9,8 +9,18 @@ export default [
         handler: [
             checkSearchParams,
             async (req: Request, res: Response) => {
-                const videos = await searchVideos(req.query.q)
-                res.send(videos);
+                const q = req.query.q;
+                res.send({q});
+            }
+        ]
+    },
+    {
+        path: "/private",
+        method: "get",
+        handler: [
+            validateToken,
+            async (req: Request, res: Response) => {
+                res.send("user is signed in");
             }
         ]
     }

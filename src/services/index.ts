@@ -1,3 +1,4 @@
 import searchRoutes from "./search/routes";
+import userRoutes from "./users/routes"
 
-export default [...searchRoutes, ];
+export default [...searchRoutes, ...userRoutes];

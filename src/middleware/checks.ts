@@ -12,3 +12,15 @@ export const checkSearchParams = (
         next();
     }
 };
+
+export const checkUserParams = (
+    req: Request,
+    res: Response,
+    next: NextFunction
+) => {
+    if (!req.body.name || !req.body.password) {
+        throw new HTTP400Error("Missing parameter");
+    } else {
+        next();
+    }
+};
