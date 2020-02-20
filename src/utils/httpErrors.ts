@@ -1,3 +1,5 @@
+import { Request, Response } from "express";
+
 export abstract class HTTPClientError extends Error {
     readonly statusCode!: number;
     readonly name!: string;
@@ -28,20 +30,23 @@ export class HTTP404Error extends HTTPClientError {
 
     constructor(message: string | object = "Not found") {
         super(message);
+
     }
 }
 
 export class HTTP401Error extends HTTPClientError {
     readonly statusCode = 401;
 
-    constructor(message: string | object = "Unauthorized User") {
+    constructor(res: Response, message: string | object = "Unauthorized User") {
         super(message);
+        res.status(this.statusCode).send(message);
     }
 }
 
 export class HTTP500Error extends HTTPClientError {
     readonly statusCode = 500;
-    constructor(message: string | object = "Internal Server Error") {
+    constructor(res: Response, message: string | object = "Internal Server Error") {
         super(message);
+        res.status(this.statusCode).send(message);
     }
 }
