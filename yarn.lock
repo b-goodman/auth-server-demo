@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@bgoodman/video-preview@^1.0.7-beta":
-  version "1.0.7-beta"
-  resolved "https://registry.yarnpkg.com/@bgoodman/video-preview/-/video-preview-1.0.7-beta.tgz#87fb66b5acf074c7c890cb754b263ca46a4698da"
-  integrity sha512-/7eldd4o1j7GyXtBfeshuHHEtM+HCfQ3bdYbFV5L9IJh6yybstIyugiB7/X35I7GAQoJd8rDLW/ZtBv/2dcQDA==
-
 "@types/bcrypt@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/bcrypt/-/bcrypt-3.0.0.tgz#851489a9065a067cb7f3c9cbe4ce9bed8bba0876"
@@ -88,11 +83,6 @@
     "@types/body-parser" "*"
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
-
-"@types/ffmpeg@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@types/ffmpeg/-/ffmpeg-1.0.0.tgz#80903e2fb41cdf8360166d37fa9de1b650236d34"
-  integrity sha512-6a6u13hh7pfpGTvn6wjN+FFYPr0zEfzB6Q+geMLEOJHl9J0in9jk+8zi78XR9ygj6/QP9W4MNtrH0E8dAx+8GQ==
 
 "@types/helmet@^0.0.44":
   version "0.0.44"
@@ -592,13 +582,6 @@ feature-policy@0.3.0:
   resolved "https://registry.yarnpkg.com/feature-policy/-/feature-policy-0.3.0.tgz#7430e8e54a40da01156ca30aaec1a381ce536069"
   integrity sha512-ZtijOTFN7TzCujt1fnNhfWPFPSHeZkesff9AXZj+UEjYBynWNUIYpC87Ve4wHzyexQsImicLu7WsC2LHq7/xrQ==
 
-ffmpeg@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/ffmpeg/-/ffmpeg-0.0.4.tgz#1c460df8e7da5127f62ceef4bfa06c59c89630cb"
-  integrity sha1-HEYN+OfaUSf2LO70v6BsWciWMMs=
-  dependencies:
-    when ">= 0.0.1"
-
 finalhandler@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/finalhandler/-/finalhandler-1.1.1.tgz#eebf4ed840079c83f4249038c9d703008301b105"
@@ -792,9 +775,9 @@ inherits@2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@~1.3.0:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
+  integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
 ipaddr.js@1.9.0:
   version "1.9.0"
@@ -1615,11 +1598,6 @@ vary@^1, vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
-
-"when@>= 0.0.1":
-  version "3.7.8"
-  resolved "https://registry.yarnpkg.com/when/-/when-3.7.8.tgz#c7130b6a7ea04693e842cdc9e7a1f2aa39a39f82"
-  integrity sha1-xxMLan6gRpPoQs3J56Hyqjmjn4I=
 
 which@^1.2.9:
   version "1.3.1"
